@@ -13,10 +13,6 @@
     --color-base-footer: #777;
 }
  
-html{
-    scroll-behavior: Smooth;
-}
-
 body {
     color: var(--color-primary);
     font-family: var(--font-default);
@@ -50,12 +46,19 @@ figure {
 figcaption {
     font-style: italic;
     margin-top: 10px;
+    
 }
  
 p {
- text-indent: 15px;
- text-align: justify;
-  }
+    padding: 0 45px;
+    margin: 45px;
+    text-indent: 15px;
+    text-align: justify;
+   }
+
+a {
+    text-decoration: none;
+}
 
  #centro-distribuicao{
     margin-left: auto;
