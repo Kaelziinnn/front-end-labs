@@ -1,110 +1,74 @@
-:root{
-    /*Paleta tipografica*/
-    --font-default: "Datatype", monospace;
-    --font-principal-title: "Archivo Black", sans-serif;
-    --font-secondary-title: "Ubuntu", sans-serif;
-    --font-principal-title-weight: 800;
-    --font-secondary-title-weight: 600;
-    --font-size-small: 0.8rem; 
+/* Import all stylesheets */
+@import url('design-system.css');
+@import url('components.css');
+@import url('animations.css');
 
-    /*Paleta de Cores*/
-    --color-primary: #333;
-    --color-bkg-figures:#F2EDED;
-    --color-border:#ccc;
-    --color-base-footer: #777;
- 
-    /*Tamanhos de imagens*/
-    --logo-width: 94px;
-
-    /*Espaçamento*/
-    --space-1: 8px;
-    --space-2: 16px;
-    --space-3: 32px;
-
-    /*Border-radius*/
-    --border-width: 1px;
-    --border-radius: 4px;
-}
-
+/* ===== BODY & GENERAL STYLES ===== */
 body {
-    color: var(--color-primary);
+    color: var(--color-text);
     font-family: var(--font-default);
-    margin-left: auto;
-    margin-right: auto;
-    width: 940px;
+    background-color: var(--color-bg);
+    line-height: var(--line-height-normal);
 }
- 
-h1 {
-    font-family: var(--font-principal-title);
-    font-weight: 600;
-    background-image: url(../img/sobre-background.jpg);
-    padding: 10px;
+
+/* ===== SECTION PARAGRAPHS ===== */
+section p {
+    margin: 0;
+    padding: 0;
 }
- 
-h2 {
-    font-family: var(--font-secondary-title);
-    font-weight:800;
-    border-bottom: 2px groove #333333;
-    margin-top: 30px;
-}
- 
-figure {
-    background-color: var(--color-bkg-figures);
-    border: 1px solid var(--color-border);
-    text-align: center;
-    padding: 15px;
-    margin: 30px;
-}
- 
-figcaption {
-    font-style: italic;
-    margin-top: 10px;
-    
-}
- 
-p {
-    padding: 0 45px;
-    margin: 45px;
+
+.article-card__content p {
+    padding: 0 !important;
+    margin: 0 0 var(--space-4) 0 !important;
     text-indent: 15px;
-    text-align: justify;
-   }
-
-a {
-    text-decoration: none;
 }
 
- #centro-distribuicao{
-    margin-left: auto;
-    margin-right: auto;
-    width: 550px;
+.article-card__content p:last-child {
+    margin-bottom: 0 !important;
 }
 
-#familia-pelho{
-    float: right;
-    margin: 0 0 10px 10px;
+/* ===== CUSTOM SCROLLBAR ===== */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
 }
 
-/*Componente Rodapé*/
-.rodape {
-    margin: var(--space-3) 0;
-    padding: var(--space-3) 0;
-    color: var(--color-base-footer);
-    border-top: var(--border-width) solid var(--color-border);
+::-webkit-scrollbar-track {
+    background: var(--color-bg);
 }
 
-.footer__container {
-    display: flex;
-    align-items: center;
-    gap: var(--space-2);
-    justify-content: center;
+::-webkit-scrollbar-thumb {
+    background: var(--color-accent);
+    border-radius: var(--radius-full);
 }
 
-.footer__logo {
-    width: var(--logo-width);
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-accent-dark);
 }
 
-.footer_text {
-    font-size: var(--font-size-small);
+/* ===== ACCESSIBILITY ===== */
+a:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
 }
 
+button:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+}
 
+/* ===== SMOOTH SCROLL ===== */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ===== SELECTION ===== */
+::selection {
+    background-color: var(--color-accent);
+    color: white;
+}
+
+::-moz-selection {
+    background-color: var(--color-accent);
+    color: white;
+}
