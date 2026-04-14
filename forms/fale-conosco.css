@@ -1,0 +1,65 @@
+body {
+  font-family: "Boldonse", system-ui;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #e3f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+input, select, textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  height: 80px;
+  resize: none;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type="submit"] {
+  background-color: #35009e;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+input[type="reset"] {
+  background-color: #ccc;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.footer-contact {
+  text-align: center;
+}
