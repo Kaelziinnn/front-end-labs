@@ -1,118 +1,70 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Cadastro</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=check_box" />
+    <title>Escolha seu Plano</title>
 </head>
 <body>
+    
+    <main class="container-ofertas">
+        <article class="card">
+            <header>
+                <h2 class="plano-titulo">Gratuito</h2>
+                <p class="plano-preco">
+                    <span class="moeda">R$</span>0<span class="mes">/mês</span>
+                </p>
+            </header>
+            <hr class="linha-divisoria">
+            <ul class="plano-features">
+                <li><span class="material-symbols-outlined icon-check" aria-hidden="true">check_box</span> 1 usuário</li>
+                <li><span class="material-symbols-outlined icon-check" aria-hidden="true">check_box</span> 3 contas de design</li>
+                <li><span class="material-symbols-outlined icon-check" aria-hidden="true">check_box</span> Suporte por e-mail</li>
+            </ul>
+            <footer>
+                <a href="#" class="btn-escolher">Escolher plano</a>
+            </footer>
+        </article>
 
-<div class="container">
+        <article class="card card-elite">
+            <header>
+                <h2 class="plano-titulo">Elite</h2>
+                <p class="plano-preco">
+                    <span class="moeda">R$</span>99<span class="mes">/mês</span>
+                </p>
+            </header>
+            <hr class="linha-divisoria">
+            <ul class="plano-features">
+                <li><span class="material-symbols-outlined icon-check" aria-hidden="true">check_box</span> Usuários ilimitados</li>
+                <li><span class="material-symbols-outlined icon-check" aria-hidden="true">check_box</span> 10 contas de design</li>
+                <li><span class="material-symbols-outlined icon-check" aria-hidden="true">check_box</span> 100 Implantações</li>
+                <li><span class="material-symbols-outlined icon-check" aria-hidden="true">check_box</span> Suporte 24h por dia</li>
+            </ul>
+            <footer>
+                <a href="#" class="btn-escolher">Escolher plano</a>
+            </footer>
+        </article>
 
-  <div class="header">
-    <div>
-      <h2>Faça seu cadastro!</h2>
-      <small>Compre online 🔖</small>
-    </div>
-    <div class="icons">
-      🙍‍♂️👩
-    </div>
-  </div>
-
-  <form>
-
-    <div class="section-title">Dados Pessoais</div>
-    <div class="grid">
-      <div class="form-group full">
-        <label>Nome</label>
-        <input type="text">
-      </div>
-
-      <div class="form-group full">
-        <label>E-mail</label>
-        <input type="email">
-      </div>
-
-      <div class="form-group">
-        <label>Data de Nascimento</label>
-        <input type="date">
-      </div>
-
-      <div class="form-group">
-        <label>CPF</label>
-        <input type="text" placeholder="000.000.000-00">
-      </div>
-    </div>
-
-    <div class="section-title">Endereço</div>
-    <div class="grid">
-      <div class="form-group full">
-        <label>Rua</label>
-        <input type="text">
-      </div>
-
-      <div class="form-group">
-        <label>Número</label>
-        <input type="number">
-      </div>
-
-      <div class="form-group">
-        <label>Bairro</label>
-        <input type="text">
-      </div>
-
-      <div class="form-group">
-        <label>CEP</label>
-        <input type="text" placeholder="00000-000">
-      </div>
-
-      <div class="form-group">
-        <label>Cidade</label>
-        <input type="text">
-      </div>
-
-      <div class="form-group">
-        <label>Estado</label>
-        <select>
-          <option>Selecione um estado</option>
-          <option>SP</option>
-          <option>RJ</option>
-          <option>MG</option>
-        </select>
-      </div>
-    </div>
-
-    <div class="section-title">Login</div>
-    <div class="grid">
-      <div class="form-group full">
-        <label>Imagem de perfil</label>
-        <input type="file">
-      </div>
-
-      <div class="form-group">
-        <label>Login</label>
-        <input type="text">
-      </div>
-
-      <div class="form-group">
-        <label>Senha</label>
-        <input type="password">
-      </div>
-
-      <div class="form-group full">
-        <label>Confirmação de Senha</label>
-        <input type="password">
-      </div>
-    </div>
-
-    <div class="buttons">
-      <button type="reset" class="btn cancel">Cancelar</button>
-      <button type="submit" class="btn submit">Enviar</button>
-    </div>
-
-  </form>
-
-</div>
+        <article class="card">
+            <header>
+                <h2 class="plano-titulo">Profissional</h2>
+                <p class="plano-preco">
+                    <span class="moeda">R$</span>49<span class="mes">/mês</span>
+                </p>
+            </header>
+            <hr class="linha-divisoria">
+            <ul class="plano-features">
+                <li><span class="material-symbols-outlined icon-check" aria-hidden="true">check_box</span> 100 Usuários</li>
+                <li><span class="material-symbols-outlined icon-check" aria-hidden="true">check_box</span> 3 contas de design</li>
+                <li><span class="material-symbols-outlined icon-check" aria-hidden="true">check_box</span> Suporte por e-mail</li>
+            </ul>
+            <footer>
+                <a href="#" class="btn-escolher">Escolher plano</a>
+            </footer>
+        </article>
+    </main>
 
 </body>
 </html>
